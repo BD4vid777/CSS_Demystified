@@ -1,0 +1,14 @@
+:root {
+    --primaryFF: 'PT Sans', sans-serif;;
+    --luckyFF: 'Luckiest Guy', cursive;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--primaryFF);
+    line-height: 1.2;
+}
+
+
