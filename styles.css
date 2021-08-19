@@ -66,4 +66,25 @@
     font-size: 1.5rem;
 }
 
+@media (max-width: 1024px) {
+    .main-container {
+        height: 100%;
+        margin: 3rem auto;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        width: 60%;
+        height: fit-content;
+    }
+
+    .card-container p {
+        font-size: 2rem;
+    }
+
+    .card-container img {
+        height: 20rem;
+    }
+}
+
 
