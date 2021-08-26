@@ -27,14 +27,14 @@ h1 {
     color: #00a1ab;
 }
 
-.subhead {
+.fs-500 {
     font-size: 1.3125rem;
-    margin-top: 0;
 }
 
 .plans {
     display: flex;
     justify-content: center;
+    margin: 3em 0;
 }
 
 .plan {
@@ -82,9 +82,7 @@ h1 {
     line-height: 1.5;
 }
 
-.plan_button {
-    background: white;
-    color: #4e4e4e;
+.button {
     text-decoration: none;
     padding: 0.5em 0.75em;
     border-radius: 0.25em;
@@ -92,9 +90,41 @@ h1 {
     font-weight: 700;
 }
 
+.accent--button {
+    background: #00a1ab;
+    color: #fff;
+}
+
+.accent--button:hover,
+.accent--button:focus {
+    color: #00a1ab;
+    background: white;
+    transition: 1s;
+    border: #00a1ab 2px solid;
+}
+
+.light--button {
+    background: white;
+    color: #4e4e4e;
+}
+
+.light--button:hover,
+.light--button:focus {
+    color: white;
+    background: #4e4e4e;
+    transition: 1s;
+}
+
 .dark--button {
     color: #fff;
     background: #4e4e4e;
+}
+
+.dark--button:hover,
+.dark--button:focus {
+    color: #4e4e4e;
+    background: white;
+    transition: 1s;
 }
 
 
