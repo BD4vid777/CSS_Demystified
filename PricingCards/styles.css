@@ -45,7 +45,7 @@ section {
 
 .fs-500 {
     font-size: 1.3125rem;
-    margin: 0;
+    margin: .5em;
 }
 
 .container {
@@ -111,7 +111,7 @@ section {
 .plans {
     display: flex;
     justify-content: center;
-    margin: 2em 0;
+    margin: 4em;
 }
 
 .plan {
@@ -143,6 +143,10 @@ section {
 .plan__description {
     margin: 2em 0;
     line-height: 1.5;
+}
+
+.hovering-over {
+    transform: scale(1.2);
 }
 
 /* ///////////////
