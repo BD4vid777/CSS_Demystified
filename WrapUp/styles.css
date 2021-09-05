@@ -27,10 +27,100 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: var(--ff-base);
     margin: 0;
     padding: 0;
+}
+
+img {
+    display: block;
+}
+
+html {
+    font-family: var(--ff-base);
     line-height: 1.6;
+    font-size: var(--fs-400);
+    color: var(--clr-base-400);
+}
+
+.ux {
+    --bg: var(--clr-ux-300);
+    --fg: var(--clr-ux-400)
+}
+
+.ui {
+    --bg: var(--clr-ui-300);
+    --fg: var(--clr-ui-400)
+}
+
+.dev {
+    --bg: var(--clr-dev-300);
+    --fg: var(--clr-dev-400)
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: .5em 3em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--fg, #fff);
+    background: var(--bg, var(--clr-accent-400));
+    border-radius: var(--border-radius);
+}
+
+.btn:hover,
+.btn:focus {
+    font-weight: var(--fw-700);
+}
+
+.tag {
+    font-size: var(--fs-300);
+    font-weight: var(--fw-700);
+    display: inline-block;
+    padding: .15em .5em;
+    border-radius: 100vw;
+    margin-right: .5em;
+    background: var(--bg, lightgrey);
+    color: var(--fg, #333);
+}
+
+
+.candidate {
+    padding: 1em;
+}
+
+.candidate > img {
+    border-radius: var(--border-radius);
+}
+
+.candidate .name {
+    font-family: var(--ff-accent);
+    font-size: var(--fs-500);
+    color: var(--clr-base-500);
+    line-height: 1;
+}
+
+.candidate .roles {
+    line-height: 1;
+    font-size: var(--fs-300);
+}
+
+.candidate .social {
+    list-style: none;
+    padding: .5em 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.candidate .social a:hover,
+.candidate .social a:focus {
+    opacity: .5;
+}
+
+.candidate .btn {
+    align-self: end;
+    justify-self: end;
 }
 
 
