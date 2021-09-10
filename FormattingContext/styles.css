@@ -142,10 +142,21 @@ section {
     display: block;
     width: 5rem;
     height: 5rem;
-    background: var(--clr-accent-400) ;
+    background: var(--clr-accent-400);
     position: absolute;
     z-index: -1;
     transform: translate(-.5rem, -.5rem);
+    transition: all 300ms ease-in-out;
+}
+
+.join-now li:hover::before {
+    width: 8.5rem;
+    height: 8.5rem;
+}
+
+li p::selection {
+    background: var(--clr-accent-400);
+    color: white;
 }
 
 
