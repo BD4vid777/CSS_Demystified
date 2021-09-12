@@ -216,6 +216,7 @@ a:hover {
 
 header {
     padding: var(--spacer) 0;
+    transition: 350ms;
 }
 
 @media (min-width: 40em) {
@@ -227,12 +228,18 @@ header {
     }
 }
 
+.primary-nav {
+    display: flex;
+    justify-content: start;
+}
+
 .logo {
-    max-width: 3rem;
+    height: 2rem;
 }
 
 .nav-list {
     display: flex;
+    width: 90%;
     justify-content: center;
     gap: 2em;
 }
